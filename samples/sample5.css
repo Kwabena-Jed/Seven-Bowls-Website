@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5e3c8 0%, #e8d4b8 100%);
+    padding: 40px 20px;
+}
+
+.menu-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-section h1 {
+    text-align: center;
+    color: #7a2917;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    display: flex;
+    background-color: #f5e3c8;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: visible;
+    box-shadow: 0 6px 20px rgba(122, 41, 23, 0.15);
+    border: 2px solid #7a2917;
+    position: relative;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(122, 41, 23, 0.05) 10px,
+        rgba(122, 41, 23, 0.05) 20px
+    );
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.food-image {
+    flex: 0 0 320px;
+    height: 260px;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #7a2917;
+    box-shadow: 5px 5px 0px rgba(122, 41, 23, 0.3);
+}
+
+.food-info {
+    flex: 1;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.food-info h3 {
+    color: #7a2917;
+    font-size: 1.9rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.food-info p {
+    color: #5a4a3a;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: inline-block;
+    background-color: #7a2917;
+    color: #f5e3c8;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    align-self: flex-start;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+    }
+    
+    .food-image {
+        flex: none;
+        width: 100%;
+        height: 220px;
+    }
+}

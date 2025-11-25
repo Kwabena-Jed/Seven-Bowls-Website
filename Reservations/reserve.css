@@ -1,0 +1,399 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ensures sizing includes padding/borders */
+}
+
+/* Header container */
+.main-header {
+    display: flex;
+    justify-content: space-between;  /* logo left, nav right */
+    align-items: center;             /* vertically center everything */
+    padding: 10px 50px;              /* adjust padding as needed */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#fff;               /* keeps elements in place */
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 0px;        /* spacing inside header */
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;       /* perfectly vertical aligned */
+    position: fixed;           /* stays on top when scrolling */
+    top: 0;
+    left: 0;
+    background-color: transparent;   /* or transparent if you prefer */
+    z-index: 100;
+}
+
+/* Logo + name container (left side) */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* LOGO */
+.logo {
+    height: 40px;   /* adjust to your preference */
+    width: auto;    /* maintain aspect ratio */
+}
+
+/* Container for logo and name */
+.logo-container {
+    display: flex;
+    align-items: center;   /* vertically center logo and text */
+    gap: 10px;             /* space between logo and text */
+}
+
+
+/* Restaurant name using Permanent Marker */
+.custom-font {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;       /* adjust size to fit nicely with logo */
+    color: #7A2917;        /* optional: brand color */
+    line-height: 1.2;      /* better line spacing if name wraps */
+}
+
+
+
+
+/* Make the nav bar go to the top-right */
+.main-nav {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* i will come back */
+    font-family: Arial, sans-serif; /* I will change the font */
+    background-color: transparent;
+}
+
+/* Style the nav links */
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Make the button look like a real CTA */
+.main-nav .btn {
+    background-color: #7A2917;  /* choose any restaurant-themed color */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Add hover effects (professional touch) */
+.main-nav a:hover {
+    color: #7A2917;
+}
+
+.main-nav .btn:hover {
+    opacity: 0.9;
+}
+
+/* ====================================
+   RESERVATION FORM SECTION STYLING
+   ==================================== */
+
+/* Main form section container */
+
+.form {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(122, 41, 23, 0.15);
+}
+
+/* Reason: Centers the form, adds breathing room with padding, white background 
+   for contrast, subtle shadow using your brown color for depth and elegance */
+
+
+/* Form heading */
+.form h2 {
+    color: #7a2917;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Reason: Uses your primary brown color for emphasis, centers the heading, 
+   creates visual hierarchy */
+
+
+/* Form description paragraph */
+.form p {
+    color: #7a2917;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Reason: Matches heading color for consistency, centers text, adds space 
+   before form fields begin, improves readability with line-height */
+
+
+/* Form element styling */
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Reason: Stacks form fields vertically, creates consistent spacing between 
+   all form elements for better organization and visual flow */
+
+
+/* Label styling */
+.form label {
+    color: #7a2917;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Reason: Makes labels stand out with your brown color, bold weight for 
+   readability, ensures labels appear above inputs */
+
+
+/* All input fields and textarea */
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #f5e3c8;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Reason: Full width for better mobile experience, comfortable padding for 
+   touch targets, border uses your beige color, smooth transitions for 
+   interactive feel, inherits font for consistency */
+
+
+/* Input focus state */
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #7a2917;
+    box-shadow: 0 0 0 3px rgba(122, 41, 23, 0.1);
+}
+
+/* Reason: Removes default browser outline, changes border to brown when active, 
+   adds subtle glow effect for accessibility and visual feedback */
+
+
+/* Placeholder text styling */
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Reason: Makes placeholder text distinguishable from actual input, italic 
+   style adds sophistication */
+
+
+/* Textarea specific styling */
+.form textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Reason: Provides adequate space for special requests, allows vertical 
+   resizing only (maintains layout), ensures consistent typography */
+
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #7a2917;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Reason: Uses your primary brown color, white text for maximum contrast, 
+   generous padding for easy clicking, uppercase and letter-spacing add 
+   importance and African design aesthetic (bold, confident typography) */
+
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: #5a1f11;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 41, 23, 0.3);
+}
+
+/* Reason: Darkens button on hover for feedback, slight lift creates depth, 
+   shadow reinforces the lifting effect */
+
+
+/* Submit button active state */
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(122, 41, 23, 0.2);
+}
+
+/* Reason: Button "presses down" when clicked, provides tactile feedback */
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .form {
+        margin: 40px 20px;
+        padding: 40px 25px;
+    }
+    
+    .form h2 {
+        font-size: 2.2rem !important;
+    }
+}
+
+/* Reason: Reduces spacing on mobile devices, adjusts heading size for smaller 
+   screens, ensures form remains usable and attractive on all devices */
+
+/* FOOTER BASE */
+.main-footer {
+    width: 100%;
+    background-color: #7A2917;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 20px 20px 20px;
+}
+
+/* Container for columns */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;      /* allows wrapping on small screens */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Each column */
+.footer-column {
+    flex: 1;
+    min-width: 180px;     /* ensures columns don't get too narrow */
+}
+
+/* Column headers */
+.footer-column h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Column content */
+.footer-column p, .footer-column a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom copyright row */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 8px 0;
+}
+
+.footer-column a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.footer-column a:hover {
+    opacity: 0.7;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+.footer-column a span {
+    line-height: 1;
+}
+
+.footer-column h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-column .contact-item  {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+ .footer-column .contact-icon  {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; /* Prevents icon from shrinking */
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-column .contact-item span {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-column p.contact-item {
+    margin: 0 0 10px 0;
+}
+
+.centered-heading {
+    text-align: center;
+}
