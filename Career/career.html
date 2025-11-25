@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Bowls|Career</title>
+    <link rel="stylesheet" href="/Career/career.css">
+</head>
+
+<body style="background-color:  #F5E3C8;">
+    
+
+     <header class="main-header">
+        <div class="logo-container">
+            <img src="/HeroSection/Pictures/logo/loogoo.png" alt="Website Logo" class="logo">
+            <p class="custom-font">Seven Bowls <br> </p>
+        </div>
+        
+       
+
+  <nav class="main-nav" autocomplete="off"> 
+     <a href="/HeroSection/index.html">HOME</a>
+     <a href="/Menu/Index/menu.html">MENUS</a>
+     <a href="/Reservations/index.html">RSESERVATIONS</a>
+     <a href="/C_E/cat.html">CATERING & EVENTS</a>
+      <button class="btn"> ORDER NOW </button>
+  </nav>
+</header>
+    
+
+
+    <div class="positions-section">
+        <h2>Join Our Team</h2>
+        <div class="positions-container">
+            <div class="position-box">
+                <h3>Head Chef</h3>
+                <p>Lead our culinary vision with mastery of traditional Ghanaian dishes. Innovate while preserving authentic flavors that tell our African story.</p>
+                <button class="apply-btn" onclick="document.getElementById('apply-form').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+            <div class="position-box">
+                <h3>Restaurant Server</h3>
+                <p>Be the face of Seven Bowls, delivering hospitality rooted in African warmth and creating memorable guest experiences.</p>
+                <button class="apply-btn" onclick="document.getElementById('apply-form').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+            <div class="position-box">
+                <h3>Kitchen Staff</h3>
+                <p>Master traditional cooking techniques alongside our experienced team. Contribute to dishes that honor our cultural heritage.</p>
+                <button class="apply-btn" onclick="document.getElementById('apply-form').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+            <div class="position-box">
+                <h3>Restaurant Manager</h3>
+                <p>Lead operations with cultural awareness and business excellence. Ensure every detail reflects our commitment to quality.</p>
+                <button class="apply-btn" onclick="document.getElementById('apply-form').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="benefits-section">
+        <h2>Why Choose Seven Bowls</h2>
+        <div class="benefits-container">
+            <div class="benefit-box">
+                <div class="benefit-icon">
+                    <img src="/Career/Icon_career/money_bag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="money_bag">
+                </div>
+                <h3>Competitive Pay</h3>
+                <p>Fair compensation that recognizes your talent and dedication</p>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-icon">
+                    <img src="/Career/Icon_career/alarm_on_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="alarm">
+                </div>
+                <h3>Flexible Hours</h3>
+                <p>Schedules designed around your life and commitments</p>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-icon">
+                    <img src="/Career/Icon_career/finance_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="finance-moode">
+                </div>
+                <h3>Career Growth</h3>
+                <p>Training and advancement opportunities in a growing business</p>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-icon">
+                    <img src="/Career/Icon_career/globe_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="globe">
+                </div>
+                <h3>Cultural Pride</h3>
+                <p>Celebrate and share African heritage every day</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Form Section -->
+    <div class="form-section" id="apply-form">
+        <h2>Apply Today</h2>
+        <form class="application-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Applying For *</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="head-chef">Head Chef</option>
+                        <option value="server">Restaurant Server</option>
+                        <option value="kitchen-staff">Kitchen Staff</option>
+                        <option value="manager">Restaurant Manager</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Tell Us About Yourself *</label>
+                <textarea id="message" name="message" required placeholder="Why are you interested in joining Seven Bowls?"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Upload Your Resume *</label>
+                <div class="file-upload-wrapper" onclick="document.getElementById('cv-file').click()">
+                    <input type="file" id="cv-file" name="cv" accept=".pdf,.doc,.docx" required>
+                    <p class="file-upload-text">📎 Click here to upload your CV</p>
+                    <p style="color: #7A2917; font-size: 0.9em; margin-top: 10px;">PDF, DOC, or DOCX format</p>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <h2>Have Questions?</h2>
+        <p>Reach out to us at <strong>careers@sevenbowls.com</strong></p>
+    </div>
+
+    <script>
+        document.getElementById('cv-file').addEventListener('change', function(e) {
+            const fileName = e.target.files[0]?.name;
+            if (fileName) {
+                const wrapper = this.parentElement;
+                wrapper.innerHTML = `<p class="file-upload-text">✅ ${fileName}</p><p style="color: #7A2917; font-size: 0.9em; margin-top: 10px;">Click to change file</p>`;
+            }
+        });
+
+        document.querySelector('.application-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will be in touch soon.');
+            this.reset();
+        });
+    </script>
+           
+
+
+
+    
+    
+
+
+
+    <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Contact Info -->
+        <div class="footer-column">
+            <h3>
+                <img src="/HeroSection/Pictures/icons/contact.png" alt="contact-info" class="contact-icon">
+                <span><U>Contact Info</U></span>
+            </h3>
+
+            <p>
+                <img src="/HeroSection/Pictures/icons/icons8-phone-squared-30.png" alt="phone" class="contact-icon">
+                <span>Phone: +233 242 356 881</span>
+            </p>
+
+             <p>
+                <img src="/HeroSection/Pictures/icons/icons8-mail-24.png" alt="phone" class="contact-icon">
+                <span>Email: info@sevenbowls.com</span>
+            </p>
+
+             <p>
+                <img src="/HeroSection/Pictures/icons/address.png" alt="phone" class="contact-icon">
+                <span>Address: 123 Main St, Accra, Ghana</span>
+            </p>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="footer-column">
+            <h3><u>Business Hours</u></h3>
+            <p>Mon-Thur: 8am - 10pm</p>
+            <p>Fri: 8am - 12am</p>
+            <p>Sun: 9am - 11pm</p>
+        </div>
+
+        <!-- Social Media -->
+        <!-- Social Media -->
+       <div class="footer-column">
+            <h3 style="text-align: center;"><u>Follow Us</u></h3>
+            <p>
+                <a href="#">
+                    <img src="/HeroSection/Pictures/icons/icons8-facebook-50.png" alt="Facebook" class="social-icon">
+                    <span>Facebook</span>
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="/HeroSection/Pictures/icons/icons8-instagram-30.png" alt="Instagram" class="social-icon">
+                    <span>Instagram</span>
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="/HeroSection/Pictures/icons/icons8-twitter-30.png" alt="Twitter" class="social-icon">
+                    <span>Twitter</span>
+                </a>
+            </p>
+        </div>
+
+        <!-- ================= ABOUT SECTION (ADDED) ================= -->
+
+
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3><u>Quick Links</u></h3>
+            <p><a href="/Menu/Index/menu.html">Menu</a></p>
+            <p><a href="/Reservations/index.html">Reservations</a></p>
+            <p><a href="/C_E/cat.html">Catering</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Seven Bowls All Rights Reserved.</p>
+    </div>
+</footer>
+
