@@ -203,7 +203,62 @@ header {
 
 .categories a button:hover {
     background-color: #5a1f12;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1);
+
+}
+
+
+/* Apply animation to each button with staggered delays */
+.categories a:nth-child(1) button {
+    animation: puff-in-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.1s backwards;
+}
+
+.categories a:nth-child(2) button {
+    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.2s backwards;
+}
+
+.categories a:nth-child(3) button {
+    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.3s backwards;
+}
+
+.categories a:nth-child(4) button {
+    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.4s backwards;
+}
+
+.categories a:nth-child(5) button {
+    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 0.5s backwards;
+}
+
+/* Keyframes for the puff-in-center animation */
+@keyframes puff-in-center {
+    0% {
+        transform: scale(1.1);
+        filter: blur(4px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* Safari/older browser support */
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(0px);
+        filter: blur(1px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 /* --- Responsive --- */
