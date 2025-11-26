@@ -16,6 +16,10 @@ html, body {
     box-sizing: border-box; /* ensures sizing includes padding/borders */
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
 /* Header container */
 .main-header {
     display: flex;
@@ -198,6 +202,26 @@ header {
     }
 }
 
+.o-btn {
+    background-color: #7A2917;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.o-btn:hover {
+    background-color: #5a1f11;
+    opacity: 0.9;
+}
 
 .btn {
     background-color: #7A2917;
@@ -209,16 +233,78 @@ header {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
     transition: background-color 0.3s ease;
+    animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 .btn:hover {
     background-color: #5a1f11;
+    animation-play-state: paused;
 }
 
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+/* Safari and older browsers */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
 
 
 /* FOOTER BASE */

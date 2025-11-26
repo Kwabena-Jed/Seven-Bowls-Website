@@ -243,6 +243,10 @@ header {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
 /* Safari/older browser support */
 @-webkit-keyframes puff-in-center {
     0% {
