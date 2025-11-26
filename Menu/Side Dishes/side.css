@@ -16,6 +16,10 @@ html, body {
     box-sizing: border-box; /* ensures sizing includes padding/borders */
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
 /* Header container */
 .main-header {
     display: flex;

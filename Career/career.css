@@ -302,11 +302,17 @@ body {
     font-size: 3em;
     margin-bottom: 20px;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
 
 .benefit-box h3 {
     font-size: 1.3em;
     margin-bottom: 15px;
     color: #7A2917;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .benefit-box p {

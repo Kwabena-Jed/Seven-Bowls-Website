@@ -236,6 +236,10 @@ header {
     animation: heartbeat 1.5s ease-in-out infinite;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
 .btn:hover {
     background-color: #5a1f11;
     animation-play-state: paused;
