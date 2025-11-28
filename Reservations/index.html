@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Reservations/reserve.css">
+       <link rel="stylesheet" href="../Reservations/reserve.css">
 </head>
 
 <body style="background-color: #F5E3C8;">
@@ -44,7 +41,7 @@
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-        <label for="email">Email Address:</label>
+        <label for="email" class="post-label">Email Address:</label>
         <input type="email" id="email" name="email" required placeholder="kwame@gmail.com">
 
         <label for="phone">Phone Number:</label>
@@ -65,23 +62,7 @@
     </form>
 </section>
 
-<div id="successMessage" class="success-Message hidden">
-    <div class="success-content">
-        <div class="success-icon">
-            <img src="../Reservations/check_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="check">
-        </div>
-        <h3>Reservation Confirmed</h3>
-        <p>Thank you for booking a reservation at <strong>Seven Bowls</strong>. 
-            We have received your request and will send an email to confirm your reservations shortly.
-        </p>
-        <p class="success-note">
-            Your table will be ready waiting for you! 🍽️
-        </p>
-        <button class="success-btn" onclick="closeSuccessMessage()">
-            Continue
-        </button>
-    </div>
-</div>
+
 
 
 
