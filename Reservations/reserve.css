@@ -135,7 +135,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Reason: Uses your primary brown color for emphasis, centers the heading, 
    creates visual hierarchy */
 
-
+.post-label {
+    font-family: 'Permanent Marker', cursive;
+}
 /* Form description paragraph */
 .form p {
     color: #7a2917;
