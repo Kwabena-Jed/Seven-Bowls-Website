@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Reservations/reserve.css">
+       <link rel="stylesheet" href="../Reservations/reserve.css">
 </head>
 
 <body style="background-color: #F5E3C8;">
@@ -26,7 +23,9 @@
      <a href="../Menu/Index/menu.html">MENU</a>
      <a href="../C_E/cat.html">CATERING & EVENTS</a>
      <a href="../Career/career.html">CAREERS</a>
+      <a href="../Menu/Index/menu.html">
       <button class="btn"> ORDER NOW </button>
+      </a>
   </nav>
 
 </header>
@@ -40,48 +39,32 @@
         Book your spot now and let us make your dining with authentic Ghanaian and African dishes truly memorable.
     </p>
 
-    <form action="" method="post">
+    <form action="" method="post" class="post-label">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-        <label for="email">Email Address:</label>
+        <label for="email" class="post-label">Email Address:</label>
         <input type="email" id="email" name="email" required placeholder="kwame@gmail.com">
 
-        <label for="phone">Phone Number:</label>
+        <label for="phone" class="post-label">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required placeholder="+233 123 456 789 ">
 
-        <label for="date">Reservation Date:</label>
+        <label for="date" class="post-label">Reservation Date:</label>
         <input type="date" id="date" name="date" required placeholder="dd/mm/yy">
 
-        <label for="time">Reservation Time:</label>
+        <label for="time" class="post-label">Reservation Time:</label>
         <input type="time" id="time" name="time" required placeholder="17:30">
 
-        <label for="guests">Number of Guests:</label>
+        <label for="guests" class="post-label">Number of Guests:</label>
         <input type="number" id="guests" name="guests" min="1" required>
 
-        <label for="request">Special Request:</label>
+        <label for="request" class="post-label">Special Request:</label>
         <textarea name="request" id="request" placeholder="Any special request"></textarea>
         <button type="submit" class="submit-btn">Book Now</button>
     </form>
 </section>
 
-<div id="successMessage" class="success-Message hidden">
-    <div class="success-content">
-        <div class="success-icon">
-            <img src="../Reservations/check_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="check">
-        </div>
-        <h3>Reservation Confirmed</h3>
-        <p>Thank you for booking a reservation at <strong>Seven Bowls</strong>. 
-            We have received your request and will send an email to confirm your reservations shortly.
-        </p>
-        <p class="success-note">
-            Your table will be ready waiting for you! 🍽️
-        </p>
-        <button class="success-btn" onclick="closeSuccessMessage()">
-            Continue
-        </button>
-    </div>
-</div>
+
 
 
 
@@ -123,14 +106,14 @@
        <div class="footer-column">
             <h3 style="text-align: center;"><u>Follow Us</u></h3>
             <p>
-                <a href="#">
-                    <img src="../HeroSection/Pictures/icons/icons8-facebook-50.png" alt="Facebook" class="social-icon">
+                 <a href="#">
+                    <img src="../../HeroSection/Pictures/icons/facebook_3536423.png" alt="Facebook" class="social-icon">
                     <span>Facebook</span>
                 </a>
             </p>
             <p>
                 <a href="#">
-                    <img src="../HeroSection/Pictures/icons/icons8-instagram-30.png" alt="Instagram" class="social-icon">
+                    <img src="../../HeroSection/Pictures/icons/instagram-logo_4096262.png" alt="Instagram" class="social-icon">
                     <span>Instagram</span>
                 </a>
             </p>
